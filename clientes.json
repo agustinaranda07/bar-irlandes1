@@ -1,0 +1,8 @@
+[
+{"id":1, "img": "./sources/miembro1.jpg", "nombre": "Diego Buendía", "msj": "Grandioso servicio, sin dudas lo recomiendo siempre."},
+
+{"id":2, "img": "./sources/miembro2.jpg", "nombre": "Mariana Gutierrez", "msj": "Mi lugar favorito, gran atención y excelente calidad."},
+
+{"id":3, "img": "./sources/miembro3.jpg", "nombre": "Lorenzo Diaz", "msj": "Nunca defraudan con su servicio, sin lugar a dudas lo vuelvo a elegir."}
+
+]

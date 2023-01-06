@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #CCDDF3;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+#wrapper{
+     background-color: #f5f5f5;
+}
+
+
+h1{
+    color: #101010;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+} 
+
+
+.titulo{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    background-color:#CCDDF3;
+    color: #101010;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#infoMain{
+    font-family: 'Playfair Display', serif;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 0 25px;
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CCDDF3;
+    color: #29486A;
+    font-size: 50px;
+}
+
+#todosLosProductos{
+    max-width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f5f5f5;
+    margin-top: 0;
+}
+
+.styleProducto{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #101010;
+    background-color: #CCDDF3;
+    border-radius: 5px;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.styleProducto:hover{
+    transform: scale(101%);
+    transition: 0.4s;
+}
+
+.boton-agregar{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: #101010;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.boton-agregar:hover{
+    color: #f5f5f5;
+    background-color: #101010;
+}
+
+
+.productoEnCarrito{
+    font-family: 'Playfair Display', serif;
+    background-color:#CCDDF3;
+    color: #101010;
+    margin: 10px 10px;
+    border-radius: 7px;
+    padding: 7px 10px 0 10px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-eliminar {
+    font-family: 'Work Sans', sans-serif;
+    background-color: transparent;
+    padding-bottom: 5px;
+    color: rgb(153, 0, 0);
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 8px;
+
+}
+
+
+#testimoniosTitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    background-color:#CCDDF3;
+    color: #101010;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+#testimonios{
+    margin-top: 0;
+    display: flex;
+    background-color:#CCDDF3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    height: 70vh
+}
+
+.styleClientes{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #101010;
+    background-color: transparent;
+    border-radius: 5px;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+#imgsJson{
+    height: 70%;
+    max-width: 70%;
+    border-radius: 5px;
+    display: flex;
+}
+
+#pJson{
+    font-style: italic;
+}
+
+
+#footer{
+    font-family: 'Work Sans', sans-serif;
+    height: 40vh;
+    background-color: #0a0820;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+}
+
+#socialMedia, #location, #phone{
+    padding-top: 15px;
+}
+
+.bi-instagram, .bi-facebook, .bi-twitter{
+    font-size: 25px;
+}
+
+#copyright{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #050520;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+iframe:hover{
+    transform: scale(101%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+
+
+
+
