@@ -25,41 +25,59 @@ const contenedorCarrito = document.getElementById("carrito");
 
 //este es el carrito que al principio está vacio
 let carritoProductos = [];
+console.log(carritoProductos)
 
 //acá uso localstorage para poder recargar la pagina y que no se borre lo que tenia en el carrito
 document.addEventListener("DOMContentLoaded", () =>{
     if(localStorage.getItem('carritoProductos')){
         carritoProductos = JSON.parse(localStorage.getItem('carritoProductos'))
         actualizarCarrito();
+        if (carritoProductos.length == 0){
+            ocultar();
+        }
     }
 });
 
 //aca uso forEach para recorrer mi stock del principio e ir agregando los productos con los estilos de css
 //luego con el listener cada vez que hago click al boton de agregar puedo añadir productos al carrito
-stockProductos.forEach((producto) => {
-    let div = document.createElement('div')
-    div.classList.add("styleProducto")
-    div.innerHTML = ` 
-    <img src=${producto.img}>
-    <h4>${producto.nombre}</h4>
-    <p>Precio: $${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar"><i class="bi bi-cart pe-2"></i>Agregar</button>`;
-    contenedorProductos.appendChild(div); 
+function ocultar(){
+    document.getElementById("cartTitle").style.display = "none";
+}
 
-    const boton = document.getElementById(`agregar${producto.id}`);
+function show(){
+    document.getElementById("cartTitle").style.display = "block";
+}
 
-    boton.addEventListener('click', () => {
-        agregarCarrito(producto.id)
-        //Acá utilizo la libreria Sweet alert para indicar al usuario que se agregó su producto al carrito
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Producto agregado al carrito',
-            showConfirmButton: false,
-            timer: 700
-          })
+if (carritoProductos.length == 0){
+    ocultar();
+}
+    stockProductos.forEach((producto) => {
+        let div = document.createElement('div')
+        div.classList.add("styleProducto")
+        div.innerHTML = ` 
+        <img src=${producto.img}>
+        <h4>${producto.nombre}</h4>
+        <p>Precio: $${producto.precio}</p>
+        <button id="agregar${producto.id}" class="boton-agregar"><i class="bi bi-cart pe-2"></i>Agregar</button>`;
+        contenedorProductos.appendChild(div); 
+    
+        const boton = document.getElementById(`agregar${producto.id}`);
+    
+        boton.addEventListener('click', () => {
+            show();
+            agregarCarrito(producto.id)
+            //Acá utilizo la libreria Sweet alert para indicar al usuario que se agregó su producto al carrito
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Producto agregado al carrito',
+                showConfirmButton: false,
+                timer: 700
+              })
+        });
     });
-});
+
+
 
 /*aca agrego un condicional para verificar si hay un producto igual en el carrito, 
 si hay sumo la cantidad y sino agrego como item nuevo*/
@@ -77,6 +95,9 @@ const agregarCarrito = (prodId) =>{
         
     }
     actualizarCarrito()
+    if (carritoProductos.length == 0){
+        ocultar();
+    }
 };
 
 // con esta funcion elimino productos del carrito y actualizo al final
@@ -101,6 +122,9 @@ const eliminarDelCarrito = (prodId) =>{
           )
           carritoProductos.splice(indice,1),
           actualizarCarrito() 
+          if (carritoProductos.length == 0){
+            ocultar();
+        }
         }
       }) 
 };
