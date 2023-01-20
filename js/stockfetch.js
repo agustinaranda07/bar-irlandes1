@@ -29,10 +29,11 @@ console.log(carritoProductos)
 
 //acá uso localstorage para poder recargar la pagina y que no se borre lo que tenia en el carrito
 document.addEventListener("DOMContentLoaded", () =>{
+    let carritoProductos = [];
     if(localStorage.getItem('carritoProductos')){
         carritoProductos = JSON.parse(localStorage.getItem('carritoProductos'))
         actualizarCarrito();
-        if (carritoProductos.length == 0){
+        if (carritoProductos.length === 0){
             ocultar();
         }
     }
@@ -56,8 +57,8 @@ if (carritoProductos.length == 0){
         div.classList.add("styleProducto")
         div.innerHTML = ` 
         <img src=${producto.img}>
-        <h4>${producto.nombre}</h4>
-        <p>Precio: $${producto.precio}</p>
+        <h4 style="padding-top: 15px;">${producto.nombre}</h4>
+        <p>$${producto.precio}</p>
         <button id="agregar${producto.id}" class="boton-agregar"><i class="bi bi-cart pe-2"></i>Agregar</button>`;
         contenedorProductos.appendChild(div); 
     
@@ -122,7 +123,7 @@ const eliminarDelCarrito = (prodId) =>{
           )
           carritoProductos.splice(indice,1),
           actualizarCarrito() 
-          if (carritoProductos.length == 0){
+          if (carritoProductos.length === 0){
             ocultar();
         }
         }
@@ -161,7 +162,7 @@ fetch("./clientes.json")
         div1.innerHTML= `
         <h4>${json.nombre}</h4>
         <img src=${json.img} id="imgsJson">
-        <p id="pJson">${json.msj}</p>
+        <p id="pJson">"${json.msj}"</p>
         `
         clientes.appendChild(div1);
     })

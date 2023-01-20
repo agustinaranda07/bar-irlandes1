@@ -6,91 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irish Bar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <section id="wrapper">
-        <!--  TITULO PRINCIPAL -->
+<section id="wrapper"> 
 
-            <header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><h1>IRISH BAR</h1></a>
-                      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-end">
-                          <li class="nav-item px-5 ">
-                            <a class="nav-link active" aria-current="page" href="#">Productos</a>
-                          </li>
-                          <li class="nav-item px-5">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart-fill"></i></a>
-                          </li>
-                          <li class="nav-item px-5">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav> 
-            </header>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <a class="a-nav-link" href="#home"><li class="nav-link">Inicio</li></a>
+        <a class="a-nav-link" href="#productos"><li class="nav-link">Productos</li></a>
+        <a class="a-nav-link" href="#carrito"><li class="nav-link"><i class="bi bi-cart-fill"></i></li></a>
+        <a class="a-nav-link" href="#contacto"><li class="nav-link">Contacto</li></a>
+      </ul>
+    </nav>
+  </header>
 
-
-        <section id="infoMain">
-            <h4 id="años50">+50 años de experiencia</h4>
-            <h4 id="calidad">Calidad 100% garantizada</h4>
-            <h4 id="rapido">Servicio a la puerta de tu casa</h4>
-        </section>
+  <div class="container-title-header">
+    <h1 class="title-header">IRISH BAR</h1>
+  </div>
 
         <!-- SECTION DONDE SE INSERTAN LOS PRODUCTOS -->
-        <h2 class="titulo">Todos los productos</h2>
-        <section id="todosLosProductos"></section>
-           
-        <h2 id="cartTitle" class="titulo">Carrito</h2>
+  <div class="title-productos">
+    <h2>Todos los productos</h2>
+  </div>
+  <section id="todosLosProductos"></section>
+  
+  <h2 id="cartTitle" class="cart-title">Carrito</h2>
 
-       <section id="carrito"></section>
+  <section id="carrito"></section>
+    <!--Seccion de informacion breve-->
+  <section id="infoMain">
+    <div class="info-icons">
+      <img class="info-icon" src="./sources/experience.png" alt="">
+      <img class="info-icon" src="./sources/quality.png" alt="">
+      <img class="info-icon" src="./sources/moto.png" alt="">
+    </div>
+    <div class="info-main-text">
+      <h3>+50 años de experiencia</h3>
+      <h3>Calidad 100% garantizada</h3>
+      <h3>Servicio a la puerta de tu casa</h3>
+    </div>
+  </section>
         
         <!-- TESTIMONIOS -->
-        <h2 id="testimoniosTitle">Quienes ya nos eligieron</h2>
-        <section id="testimonios"></section>
+  <h2 id="testimoniosTitle">Quienes ya nos eligieron</h2>
+  <section id="testimonios"></section>
 
         <!-- FOOTER -->
-        <section id="footer">
-            <div id="socialMedia">
-                <h4>Nuestras Redes</h4>
-                <a href="https://www.instagram.com/" target="_blank"><p><i class="bi bi-instagram"></i></p></a>
-                <a href="https://facebook.com/" target="_blank"><p><i class="bi bi-twitter"></i></p></a>
-                <a href="https://twitter.com/" target="_blank"><p><i class="bi bi-facebook"></i></p></a>
-            </div>
-            <div id="location">
-                <h4>Ubicacion</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249873.57999421877!2d-58.33202479608451!3d-34.62715098059205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1670564205093!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="phone">
-                <h4>Teléfonos</h4>
-                <i class="bi bi-telephone"></i><p class="phone">33532532525</p>
-                <i class="bi bi-telephone"></i><p class="phone">34456488132</p>
-                <i class="bi bi-phone"></i></i><p class="phone">15222355899</p>
-                <i class="bi bi-phone"></i><p class="phone">155651553</p>
-            </div>
-        </section>
-        <!-- COPYRIGHT -->
-        <section id="sectionCopyright">
-            <div id="copyright">
-                <p>© COPYRIGHT 2022 ALL RIGHTS RESERVED BY IRISH BAR</p>
-            </div>
-        </section> 
+  <section id="footer">
+    <div id="socialMedia">
+      <h4 class="subtitles-footer">Nuestras Redes</h4>
+        <a href="https://www.instagram.com/" target="_blank"><p><i class="bi bi-instagram"></i></p></a>
+        <a href="https://facebook.com/" target="_blank"><p><i class="bi bi-twitter"></i></p></a>
+        <a href="https://twitter.com/" target="_blank"><p><i class="bi bi-facebook"></i></p></a>
+    </div>
+    <div id="location">
+      <h4 class="subtitles-footer">Ubicacion</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249873.57999421877!2d-58.33202479608451!3d-34.62715098059205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1670564205093!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="phone">
+      <h4 class="subtitles-footer">Teléfonos</h4>
+        <i class="bi bi-telephone"></i><p class="phone">33532532525</p>
+        <i class="bi bi-telephone"></i><p class="phone">34456488132</p>
+        <i class="bi bi-phone"></i></i><p class="phone">15222355899</p>
+        <i class="bi bi-phone"></i><p class="phone">155651553</p>
+    </div>
     </section>
+        <!-- COPYRIGHT -->
+    <section id="sectionCopyright">
+      <div id="copyright">
+        <p>© COPYRIGHT 2022 ALL RIGHTS RESERVED BY IRISH BAR</p>
+      </div>
+    </section> 
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./js/stockfetch.js"></script>
 </body>
-
 </html>
