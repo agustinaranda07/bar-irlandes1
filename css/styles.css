@@ -265,6 +265,19 @@ h1{
 .bi-instagram, .bi-facebook, .bi-twitter{
     font-size: 25px;
 }
+
+.bi-instagram{
+    color: #dc2743;
+}
+
+.bi-twitter{
+    color: #1da1f2;
+}
+
+.bi-facebook{
+    color: #3b5998 ;
+}
+
 #sectionCopyright{
     margin-top: 30px;
 }
