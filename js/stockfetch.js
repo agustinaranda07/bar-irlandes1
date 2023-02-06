@@ -1,21 +1,27 @@
 //acá cargué todos mis productos para poder pasarlos al DOM
 
 const stockProductos = [
-    {id: 1, nombre: "Cerveza Porter", cantidad: 1, precio: 15, img: "./sources/cervezas/porter.jpg"},
-    {id: 2, nombre: "Cerveza Lager", cantidad: 1, precio: 12, img: "./sources/cervezas/lager.jpg"},
-    {id: 3, nombre: "Cerveza Pale Ale", cantidad: 1, precio: 17, img: "./sources/cervezas/paleAle.jpg"}, 
-    {id: 4,nombre: "Ron Blanco", cantidad: 1, precio: 10, img: "./sources/ron/ronBlanco.jpg"},
-    {id: 5,nombre: "Ron Dorado", cantidad: 1, precio: 20, img: "./sources/ron/ronDorado.jpg"},
-    {id: 6,nombre: "Ron Cubano", cantidad: 1, precio: 15, img: "./sources/ron/cubano.jpg"},
-    {id: 7,nombre: "Ron Añejo", cantidad: 1, precio: 30, img: "./sources/ron/añejo.jpg"},
-    {id: 8,nombre: "Whisky De Grano" , cantidad: 1, precio: 40, img: "./sources/whisky/deGrano.jpg"},
-    {id: 9,nombre: "Whisky Bourbon", cantidad: 1, precio: 35, img: "./sources/whisky/Bourbon.jpg"},
-    {id: 10,nombre: "Whisky De Centeno", cantidad: 1, precio: 20, img: "./sources/whisky/deCenteno.jpg"},
+    {id: 1, nombre: "Cerveza Porter", cantidad: 1, precio: 15, img: "./sources/cervezas/porter.png"},
+    {id: 2, nombre: "Cerveza Lager", cantidad: 1, precio: 12, img: "./sources/cervezas/lager.png"},
+    {id: 3, nombre: "Cerveza Pale Ale", cantidad: 1, precio: 17, img: "./sources/cervezas/paleAle.png"}, 
+    {id: 4,nombre: "Ron Blanco", cantidad: 1, precio: 10, img: "./sources/ron/ronBlanco.png"},
+    {id: 5,nombre: "Ron Dorado", cantidad: 1, precio: 20, img: "./sources/ron/ronDorado.png"},
+    {id: 6,nombre: "Ron Cubano", cantidad: 1, precio: 15, img: "./sources/ron/cubano.png"},
+    {id: 7,nombre: "Ron Añejo", cantidad: 1, precio: 30, img: "./sources/ron/añejo.png"},
+    {id: 8,nombre: "Whisky De Grano" , cantidad: 1, precio: 40, img: "./sources/whisky/deGrano.png"},
+    {id: 9,nombre: "Whisky Bourbon", cantidad: 1, precio: 35, img: "./sources/whisky/Bourbon.png"},
+    {id: 10,nombre: "Whisky De Centeno", cantidad: 1, precio: 20, img: "./sources/whisky/deCenteno.png"},
     {id: 11,nombre: "Whisky Blended", cantidad: 1, precio: 25, img: "./sources/whisky/blended.png"},
     {id: 12, nombre: "Hamburguesa", cantidad: 1, precio: 15, img: "./sources/comidas/burguer.jpg"},
     {id: 13, nombre: "Pizza", cantidad: 1, precio: 20, img: "./sources/comidas/pizza.jpg"},
     {id: 14, nombre: "Papas fritas", cantidad: 1, precio: 7, img: "./sources/comidas/papas.jpg"}
 ]
+
+// const nav = document.querySelector("nav")
+// window.addEventListener("scroll", function(){
+//     window.scrollY > 100 && (nav.style.background=`rgba(0, 0, 0, 0.658)`)
+//     window.scrollY < 100 && (nav.style.background=`transparent`)
+// })
 
 //esta constante trae el div "todoslosproductos" de html donde se van a insertar los productos
 const contenedorProductos = document.getElementById("todosLosProductos");
